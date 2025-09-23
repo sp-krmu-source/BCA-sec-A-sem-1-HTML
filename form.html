@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form tag: helps to submit the form and create the form enviornment
+
+    -:Attributes:-
+    name attribute:helps to get the user data in the URL
+    value attribute :use to collect the selected data so that we can get it in url.
+    placeholder : used to create a dummy shadow text for the input indicators
+    required : used for mandatory field to fill -->
+    <form>
+        <label>
+            Name:<input type="text" name="FullName" placeholder="Enter your name" />
+        </label>
+        <br>
+        <label>
+            Email:<input type="email" name="EmailID" placeholder="ENter your Mail id" />
+        </label>
+        <br>
+        <label>
+            Password:<input type="password" name="password" placeholder="Enter your password" />
+        </label>
+        <br>
+
+        <!-- radio buttons -->
+        <label> <input type="radio" name="Gender" value="Male" />Male </label>
+        <label> <input type="radio" name="Gender" value="Female" />Female </label>
+        <br>
+        <!-- checkbox -->
+        <label><input type="checkbox" name="Subjects" value="HTML" />HTML</label>
+        <label><input type="checkbox" name="Subjects" value="CSS" />CSS</label>
+        <label><input type="checkbox" name="Subjects" value="JS" />JS</label>
+        <br>
+
+        <!-- dropdown list -->
+        <select name="TechStack">
+            <option>Default</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="FullStack">FullStack</option>
+        </select>
+        <br>
+
+        <textarea width="400" height="300"> </textarea>
+        <br>
+
+        <!-- select date -->
+        <input type="date">
+        <br>
+
+        <!-- select time -->
+        <input type="time">
+        <br>
+
+        <!-- create only number input field -->
+        <input type="number"> 
+        <br>
+
+        <!-- Range input field
+        min and max attribute to give the value of range -->
+        <input type="range" min="500" max="10000">
+        <br>
+
+        <!-- choose file from the local device -->
+        <input type="file">
+        <br>
+
+        <!-- reset button used to reset the form which user filled -->
+        <input type="reset">
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
